@@ -23,7 +23,7 @@
 			<h2>Reading & Critique</h2>
 
 			<figure>
-				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
+				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" style="width: 1200px; height: auto;"/>
 			</figure>
 
 			<div class="dataset-description" style="text-align: justify;">
@@ -54,16 +54,16 @@
 				<li>CRITIQUE 4: There is a tradeoff between aesthetic impact and interpretability in the original visualization. Being a public health article, the intended audience is broad. While the spiral format is engaging, modifications that prioritize comparability, readability, and accessibility would make it more effective across different audiences and contexts. FMy sketches will try to balance narrative appeal with practical clarity, ensuring that the visualization serves both exploratory and explanatory functions effectively.</li>
 			</ul>
 
-		</div>
+		
 		</section>
 
 		<section>
 			<h2>Visualization Sketches</h2>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Sketch1.jpeg" alt="" style="width: 1200px; height: auto;"/>
 				<figcaption>
-          BRIEF CAPTION HERE.
+					COVID-19 Waves in the U.S. (2020–2022): A circular timeline where each year is represented as a separate ring, allowing clear month-to-month and year-to-year comparisons of COVID-19 case waves.
 				</figcaption>
 			</figure>
 
@@ -72,15 +72,37 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>RATIONALE 1: The original spiral graph made it difficult to directly compare data across years because it continuously expanded outward.
+					This radial timeline preserves the circular storytelling format but enhances clarity by using concentric rings, one per year.
+					Monthly markers provide clear reference points, replacing radial grid lines, which were hard to read in the original visualization. But the year is still divided into four quarters.</li>
+
+				<li>RATIONALE 2: Radial lines used to indicate the number of cases instead of curves. First, I tried radial lines symmetric about the circle but that was harder to perceive. So, I went with lines originating outwards from the circle.</li>
+
+				<li>RATIONALE 3: The labels for month were always horizontal for ease of reader.</li>
 			</ul>
 
+			<p>What I Hoped to Communicate? 
+				<br>1. Improved Year-to-Year Comparisons.
+				By placing each year on a separate ring, trends across different years are visually aligned, reducing cognitive strain.
+				<br>2. Seasonality of COVID-19 Surges.				
+				The consistent placement of months makes it easier to see how peaks recurred in the same seasons across years.
+				<br>3. Better Readability & Perception.			
+				Using monthly markers instead of radial grid lines prevents clutter while keeping the circular layout intuitive.</p>
+
+				<p>What Worked Well? 
+					<br>1. Maintains the compelling, cyclical storytelling aspect from the original design.
+					<br>2. Clearly shows how different years compare without the distortion caused by the expanding spiral.
+					<br>3. <strong>Improves pre-attentive processing</strong> by using position on a common scale (each ring) instead of unaligned curves.</p>
+
+				<p>What did not work Well? 
+						<br>1. Still requires mental effort to read exact values – radial layouts are generally harder to read than linear ones.
+						<br>2. Possible confusion with multi-layered rings – some viewers might struggle with the layering of years.
+						<br>3. Scalability issue – If more years were added (e.g., 2023+), the outermost rings would become increasingly difficult to compare.
+					<br> These things are tried to be resolved in the next sketch.</p>
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Sketch2.jpeg" alt="" style="width: 1200px; height: auto;"/>
 				<figcaption>
-          BRIEF CAPTION HERE.
+				COVID-19 monthly cases in the U.S. (2020–2022). A small multiples bar chart where each year (2020, 2021, 2022) is displayed separately, aligned month by month to highlight seasonal trends and the Omicron surge.
 				</figcaption>
 			</figure>
 
@@ -89,15 +111,40 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>RATIONALE 1: The number of cases are laid out in a straight line to reduce the cognitive effort by the reader. Bar lengths are also good for magnitude estimation.</li>
+				<li>RATIONALE 2: The colour coding and the length of the bar are combined to produce a redundancy gain. Red has been used for very high number of cases and green for low numbers. </li>
+				<li>RATIONALE 3: X-axis labels are repeated for each row, preventing eye movement strain when comparing across years. Years 2022-2020 were laid out top to bottom and bottom to up. Top to bottom seemed easier for me to perceive.</li>
 			</ul>
 
+			<p>What I Hoped to Communicate? 
+				<br>1. The 2022 graph has been left incomplete on x-axis and a broken bar to show expectation of drastic surge and uncertain future. This would call for action from the reader.
+				<br>2. Seasonality of COVID-19 Surges.				
+				The consistent placement of months makes it easier to see how peaks recurred in the same seasons across years.
+				<br>3. Better Readability & Perception than the radial sketch.
+			</p>
+			
+			<p>What Worked Well? 
+				<br>1. Magnitude estimation is easier because bar lengths are well-suited for comparing values.
+				<br>2. Using both bar length and color encoding enhances discriminability (as discussed in class).
+				This aligns with pre-attentive processing, allowing quick recognition of high vs. low case months.
+				<br>3. The broken bar for 2022 effectively implies uncertainty, drawing attention to the drastic rise and unknown trajectory.
+				This visual element serves as a call to action, nudging the reader toward awareness or further inquiry.</p>
+
+			<p>What did not work Well? 
+					<br>1. Potential Clutter from Repeated X-Axis Labels.
+
+					While repetition improves readability, repeating the X-axis multiple times may feel excessive for some viewers.
+					A single shared X-axis for all rows might be a cleaner alternative.
+					<br>2. Limited Data Density Compared to Radial Designs.
+
+					While more readable, this format lacks the compact storytelling of the radial sketch (which conveyed the cyclical nature more intuitively).
+					<br>3. Color Perception Issues.
+
+					While red-green encoding works for most viewers, colorblind users (especially red-green colorblind) may struggle with colour encoding.</p>
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Sketch3.jpeg" alt="" style="width: 1200px; height: auto;"/>
 				<figcaption>
-          BRIEF CAPTION HERE.
+					A line chart displaying COVID-19 trends over time, with three color-coded lines (green for 2020, black for 2021, red for 2022) to compare cases across years while preserving seasonality patterns.
 				</figcaption>
 			</figure>
 
@@ -106,19 +153,62 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>RATIONALE 1: Gestalt Principles for Pattern Recognition.This visualization leverages the Gestalt principle of continuity, which helps the human eye follow trends across time smoothly.
+					By grouping three years into distinct but continuous lines, the chart naturally encourages comparisons and to follow continuity using dashed lines from Dec to Jan of next year.</li>
+				<li>RATIONALE 2: Preserving Seasonal Trends While Improving Readability.
+
+					Unlike the radial spiral from Sketch 1, this linear format ensures that seasonality trends remain clear while making exact comparisons easier.
+					All three years are aligned on the same timeline, allowing viewers to compare waves occurring in the same months across different years.</li>
+				<li>RATIONALE 3: Using a 7-Day Moving Average to smoothen fluctuations.
+
+					Distinct Color Encoding for Better Differentiation. Red highlights 2022, drawing attention to the Omicron surge and reinforcing the idea of increasing severity.
+					This choice aligns with pre-attentive processing, where color differences immediately guide attention to key data points. </li>
 			</ul>
+
+			<p>What I Hoped to Communicate? 
+				<br>1. Clear Yearly Comparisons
+
+				By placing 2020, 2021, and 2022 on the same axis, the viewer can immediately see how case surges evolved over time.
+				Peaks that align across years indicate seasonal patterns of COVID-19 waves.
+				<br>2. SSmoother Trend Perception Through Line Continuity
+
+				The 7-day moving average helps emphasize long-term trends over daily fluctuations, making the visualization less noisy but still insightful.
+				<br>3. Rising Concern & Future Uncertainty
+
+				The 2022 line is left incomplete at the end, suggesting that further increases are expected, much like the broken bar concept in Sketch 2.
+			</p>
+
+			<p>What Worked Well? 
+				<br>1. Easy Year-to-Year Comparisons
+
+				The linear format makes it much easier to see how 2022 compares with 2020 and 2021.
+				Viewers can quickly identify seasonal surges, which was difficult in the radial sketch.
+				<br>2. Redundancy Gain Enhances Perception
+
+				Using both line position and color ensures that trends are easily distinguishable without overwhelming the viewer (redundancy gain principle).
+				<br>3. More Compact and Scalable Than Previous Sketches
+
+				The bar chart in Sketch 2 worked well for limited data, but this line chart can accommodate additional years without losing readability.</p>
+
+				<p>What did not work Well? 
+					<br>1. Harder to Read Exact Values
+
+					Since this is a trend-based chart, specific case numbers are not immediately visible.
+					<br>2. No Direct Indication of Uncertainty or Future Trends
+
+					Unlike Sketch 2’s broken bar, this chart does not explicitly convey future uncertainty.
+					</p>
+
+				</div>
 		</section>
 
 		<section>
 			<h2>Final Visualization Design</h2>
       
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Final Design.png" alt="" style="width: 1200px; height: auto;"/>
 				<figcaption>
-          BRIEF CAPTION HERE.
+					Understanding the Severity of the Omicron Variant: Trends in Confirmed, Deceased, and Recovered Cases as percentage of Cumulative tested cases.
 				</figcaption>
 			</figure>
 
@@ -128,14 +218,25 @@
 			<h2>Design Process & Design Decisions</h2>
 
 			<p>
-        DESCRIBE YOUR DESIGN PROCESS AND DECISION DECISIONS HERE.
+				The primary goal of this visualization is to assess the severity of the Omicron variant by tracking trends in confirmed cases, deaths, and recoveries over time. These have been weekly aggreagated and calculated from the original dataset. To enhance the readability of values that span several orders of magnitude, the y-axis is logarithmically scaled. This choice adheres to Stevens’ Power Law, which explains that human perception of numerical differences is nonlinear—small variations at low values are more noticeable than similar variations at high values. The logarithmic transformation ensures that fluctuations in lower-value trends, such as deceased rates, remain visible while also preserving large-scale patterns in confirmed cases.<br>
+				
+				The choice of a line chart aligns with the rationale of Sketch 3.<br>
+
+				The color scheme follows an intuitive mapping to meaning: blue for confirmed cases (neutral), red for deceased cases (high severity), and green for recovered cases (positive outcome). This design choice aligns with pre-attentive processing and Steven’s Power Law, which explains how humans perceive intensity differences in various visual dimensions—color, in this case. <br>
+					
+				
+				The minimalistic design approach was adopted to avoid cognitive overload. Extraneous gridlines and dual y-axis were removed, keeping only essential elements that improve comprehension. This reflects the Gestalt principle of simplicity (Prägnanz), which suggests that humans prefer visual representations that are simple and well-organized. 
       </p>
 
       <h3>Reflection</h3>
 
       <p>
-        WRITE YOUR FINAL REFLECTION HERE.
+        This final visualization successfully communicates the key insights into the Omicron variant’s severity. Compared to earlier iterations, the refined use of color, scale, and smoothing techniques has significantly improved clarity. However, certain trade-offs remain. While the logarithmic scale improves visibility across multiple orders of magnitude, it may obscure absolute differences, making it harder for viewers unfamiliar with logarithmic scales to interpret actual case numbers. Additionally, while minimalism improves focus, fewer annotations mean that viewers must rely on their own understanding of the data’s context. <br>
+
+Through the process of critique by redesign, it became clear that balancing visual simplicity with informational depth is challenging. Earlier drafts struggled with cluttered elements, which were streamlined using Gestalt principles and perceptual psychology insights.  Ultimately, this visualization highlights the importance of leveraging both data transformations and cognitive principles to create an effective and insightful data-driven story.
       </p>
+
+	</div>
 		</section>
 	</main>
 </body>
